@@ -1,0 +1,22 @@
+// BASE
+@import "./scss/base/base";
+@import "./scss/base/fonts";
+@import "./scss/base/helpers";
+@import "./scss/base/reset";
+@import "./scss/base/typography";
+
+// ABSTRACTS
+@import "./scss/abstracts/functions";
+@import "./scss/abstracts/mixins";
+@import "./scss/abstracts/variables";
+
+// COMPONENTS
+@import "./scss/components/button";
+@import "./scss/components/form";
+
+// LAYOUTS
+@import "./scss/layouts/header";
+@import "./scss/layouts/footer";
+@import "./scss/layouts/main";
+@import "./scss/layouts/aside";
+@import "./scss/layouts/nav";
