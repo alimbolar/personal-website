@@ -49,12 +49,19 @@ section.profiles nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 3rem;
     text-transform: uppercase;
+    gap: 0.5rem;
+
+    @media (min-width: 50rem) {
+      gap: 3rem;
+    }
     li {
-      a:hover,
-      a:active {
+      a {
         text-decoration: none;
+        &:hover {
+          color: black;
+          border-bottom: orange;
+        }
       }
     }
   }
