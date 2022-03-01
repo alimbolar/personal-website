@@ -49,8 +49,15 @@ const profileItems = profilesNav.querySelectorAll(".nav__item");
 profilesNav.addEventListener("click", goToProfile);
 
 const profilesContainer = document.querySelector(".profiles__container");
+const allProfiles = document.querySelectorAll(".profile");
 
 const slideWidth = profilesContainer.clientWidth;
+
+function goToSlide(slide) {
+  allProfiles.forEach((profile) => {
+    profile.style.transform = `transformX(${slide * 100}%)`;
+  });
+}
 
 function goToProfile(e) {
   e.preventDefault();
@@ -62,6 +69,8 @@ function goToProfile(e) {
   // Move Slide to target
   const slide = +target.closest(".nav__item").getAttribute("data-slide");
   profilesContainer.style.transform = `translateX(${-slide * slideWidth}px)`;
+  // goToSlide(slide);
+
   profilesContainer.style.transition = "transform 1s";
   // console.log(profileItems);
   console.log(slideWidth);
