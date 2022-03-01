@@ -1,26 +1,51 @@
-nav {
-  width: 100%;
-  height: calc(100vh - 150px);
-  position: absolute;
-  z-index: 100;
-  top: 150px;
-  left: 0;
+header {
+  nav {
+    width: 100%;
+    height: calc(100vh - 150px);
+    position: absolute;
+    z-index: 100;
+    top: 150px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+
+    ul {
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 2rem;
+      line-height: 5rem;
+      color: gray;
+      li {
+        border-bottom: 1px solid gray;
+
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+section.profiles nav {
   display: flex;
   justify-content: center;
   align-items: center;
   background: white;
-
+  // z-index: 1000;
   ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-family: "Courier New", Courier, monospace;
-    font-size: 2rem;
-    line-height: 5rem;
-    color: gray;
+    gap: 3rem;
+    text-transform: uppercase;
     li {
-      border-bottom: 1px solid gray;
-
-      &:hover {
-        color: black;
+      a:hover,
+      a:active {
+        text-decoration: none;
       }
     }
   }
