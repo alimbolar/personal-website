@@ -9,7 +9,7 @@ header {
   z-index: 1000;
   // overflow: hidden;
 
-  @media (min-width: var(--desktop-breakpoint)) {
+  @media (min-width: 50rem) {
     height: var(--header-height-desktop);
   }
 }
@@ -18,17 +18,17 @@ header {
   width: var(--header-height-mobile);
   overflow: hidden;
 
-  @media (min-width: var(--desktop-breakpoint)) {
+  @media (min-width: 50rem) {
     width: var(--header-height-desktop);
   }
 }
 .menu {
-  width: var(--header-height-desktop);
+  width: var(--header-height-mobile);
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (min-width: var(--desktop-breakpoint)) {
-    width: var(--header-height-mobile);
+  @media (min-width: 50rem) {
+    width: var(--header-height-desktop);
     border: 1px solid;
   }
 

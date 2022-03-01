@@ -2,7 +2,7 @@ main {
   padding-top: var(--header-height-mobile);
   height: calc(100vh - var(--header-height-mobile));
 
-  @media (min-width: var(--desktop-breakpoint)) {
+  @media (min-width: 50rem) {
     padding-top: var(--header-height-desktop);
     height: calc(100vh - var(--header-height-desktop));
   }
@@ -24,11 +24,10 @@ main {
   height: calc(100vh - var(--header-height-desktop));
   gap: 0.5rem;
 
-  @media (min-width: var(--desktop-breakpoint)) {
+  @media (min-width: 50rem) {
     grid-auto-flow: column;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-
     padding: 5rem;
     border: 1px solid green;
   }
@@ -43,7 +42,7 @@ main {
     p.highlight {
       font-size: 2.4rem;
       color: black;
-      @media (min-width: var(--desktop-breakpoint)) {
+      @media (min-width: 50rem) {
         font-size: 4rem;
       }
     }
@@ -51,7 +50,7 @@ main {
       font-size: 1.2rem;
       color: gray;
 
-      @media (min-width: var(--desktop-breakpoint)) {
+      @media (min-width: 50rem) {
         font-size: 2rem;
       }
     }
@@ -70,7 +69,7 @@ main {
       font-weight: bold;
       margin-bottom: 1rem;
 
-      @media (min-width: var(--desktop-breakpoint)) {
+      @media (min-width: 50rem) {
         font-size: 1.2rem;
       }
     }

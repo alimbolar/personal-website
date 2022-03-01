@@ -9,7 +9,7 @@ blockquote {
       position: absolute;
       left: -3rem;
       top: -1rem;
-      @media (min-width: var(--desktop-breakpoint)) {
+      @media (min-width: 50rem) {
         left: -1.5rem;
         top: -1rem;
       }
@@ -28,7 +28,7 @@ blockquote {
       // bottom: 0rem;
       top: -0.5rem;
       color: black;
-      @media (min-width: var(--desktop-breakpoint)) {
+      @media (min-width: 50rem) {
         right: -0.5rem;
       }
     }
