@@ -98,6 +98,7 @@ main {
   // height: 100vh;
 
   display: grid;
+  overflow-y: scroll;
 
   @media (max-width: 50rem) {
     grid-auto-flow: row;
