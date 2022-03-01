@@ -18,7 +18,7 @@ header {
   width: var(--header-height-mobile);
   overflow: hidden;
 
-  @media (min-width: var(--dekstop-breakpoint)) {
+  @media (min-width: var(--desktop-breakpoint)) {
     width: var(--header-height-desktop);
   }
 }
@@ -27,6 +27,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: var(--desktop-breakpoint)) {
+    width: var(--header-height-mobile);
+    border: 1px solid;
+  }
 
   figure {
     width: 30%;

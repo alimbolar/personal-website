@@ -7,7 +7,7 @@ blockquote {
       content: "“";
       font-size: 9rem;
       position: absolute;
-      left: 0rem;
+      left: -3rem;
       top: -1rem;
       @media (min-width: var(--desktop-breakpoint)) {
         left: -1.5rem;
@@ -24,7 +24,9 @@ blockquote {
       font-family: "Sorts Mill Goudy", serif;
       font-size: 9rem;
       position: absolute;
-      right: 0.5rem;
+      right: -3.6rem;
+      // bottom: 0rem;
+      top: -0.5rem;
       color: black;
       @media (min-width: var(--desktop-breakpoint)) {
         right: -0.5rem;
