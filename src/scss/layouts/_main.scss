@@ -1,9 +1,13 @@
 main {
-  padding-top: var(--header-height-mobile);
+  // padding-top: var(--header-height-mobile);
+  position: absolute;
+  top: var(--header-height-mobile);
   height: calc(100vh - var(--header-height-mobile));
 
   @media (min-width: 50rem) {
-    padding-top: var(--header-height-desktop);
+    // padding-top: var(--header-height-desktop);
+    // position: absolute;
+    top: var(--header-height-desktop);
     height: calc(100vh - var(--header-height-desktop));
   }
 

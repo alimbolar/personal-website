@@ -43,7 +43,12 @@ section.profiles nav {
   justify-content: center;
   align-items: center;
   background: white;
+
   // z-index: 1000;
+  @media (min-width: 50rem) {
+    border-right: 1px solid gray;
+  }
+
   ul {
     display: flex;
     flex-direction: column;
