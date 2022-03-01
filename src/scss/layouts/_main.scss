@@ -138,13 +138,15 @@ main {
     flex: 1 0 100%;
 
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     padding: 3rem;
 
     @media (min-width: 50rem) {
       padding: 5rem;
+      justify-content: center;
+
       // padding: 10rem;
       // width: 80%;
     }
