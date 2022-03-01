@@ -14,7 +14,7 @@ main {
     // background: green;
     // height: calc(100vh - 150px);
     height: calc(100vh - var(--header-height-mobile));
-    padding: 1rem 0;
+    // padding: 1rem 0;
 
     @media (min-width: 50rem) {
       height: calc(100vh - var(--header-height-desktop));
@@ -34,7 +34,7 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 5rem;
-    border: 1px solid green;
+    // border: 1px solid green;
   }
 
   &__title {
@@ -56,7 +56,7 @@ main {
       color: gray;
 
       @media (min-width: 50rem) {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
     }
   }
@@ -85,9 +85,9 @@ main {
 }
 
 .profiles {
-  border: 1px solid red;
+  // border: 1px solid red;
   // height: calc(100vh - var(--header-height-mobile));
-  height: 100vh;
+  // height: 100vh;
 
   display: grid;
   grid-auto-flow: row;
@@ -96,7 +96,7 @@ main {
     height: calc(100vh - var(--header-height-desktop));
 
     grid-auto-flow: column;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 30% 70%;
     // justify-content: center;
     // align-items: flex-start;
     // gap: 2rem;
@@ -118,7 +118,7 @@ main {
   }
 
   .profile {
-    border: 1px solid gray;
+    // border: 1px solid gray;
     // height: 100%;
     display: flex;
     width: 100%;
@@ -131,6 +131,7 @@ main {
     padding: 3rem;
 
     @media (min-width: 50rem) {
+      padding: 5rem;
       // padding: 10rem;
       // width: 80%;
     }
@@ -138,6 +139,7 @@ main {
     p.highlight {
       font-weight: bold;
       font-size: 1.5rem;
+      // color: gray;
     }
     p {
       margin-bottom: 1rem;

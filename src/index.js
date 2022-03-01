@@ -5,6 +5,7 @@ import "./style.scss";
 const logo = document.querySelector(".logo");
 
 logo.addEventListener("click", function () {
+  headerNav.classList.add("hidden");
   hero.scrollIntoView(false);
 });
 
