@@ -14,6 +14,7 @@ main {
     // background: green;
     // height: calc(100vh - 150px);
     height: calc(100vh - var(--header-height-mobile));
+    border: 1px solid red;
     // padding: 1rem 0;
     // padding-top: var(--header-height-mobile);
 
@@ -93,13 +94,17 @@ main {
   // height: 100vh;
 
   display: grid;
-  grid-auto-flow: row;
-  grid-template-rows: 20% 80%;
+
+  @media (max-width: 50rem) {
+    grid-auto-flow: row;
+    grid-template-rows: 20% 80%;
+  }
+
   @media (min-width: 50rem) {
     height: calc(100vh - var(--header-height-desktop));
-
     grid-auto-flow: column;
     grid-template-columns: 30% 70%;
+
     // justify-content: center;
     // align-items: flex-start;
     // gap: 2rem;
