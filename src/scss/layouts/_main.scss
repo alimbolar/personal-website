@@ -1,15 +1,9 @@
 main {
-  // padding-top: var(--header-height-mobile);
-  position: absolute;
-  top: 6rem;
+  padding-top: var(--header-height-mobile);
   height: calc(100vh - var(--header-height-mobile));
-  border: 1px solid red;
-  @media (min-width: 50rem) {
-    // padding-top: var(--header-height-desktop);
-    // position: absolute;
-    border: 1px solid red;
 
-    top: 10rem;
+  @media (min-width: 50rem) {
+    padding-top: var(--header-height-desktop);
     height: calc(100vh - var(--header-height-desktop));
   }
 

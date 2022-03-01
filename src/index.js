@@ -29,6 +29,7 @@ console.log(homeMenu);
 
 knowMoreButton.addEventListener("click", function () {
   profiles.scrollIntoView();
+  console.log(hero.clientHeight);
 });
 
 knowMoreMenu.addEventListener("click", function () {
