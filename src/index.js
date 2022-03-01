@@ -71,3 +71,19 @@ function goToProfile(e) {
   });
   activeItem.classList.add("active");
 }
+
+// INACTIVE BUTTONS
+
+const inactiveButtons = document.querySelectorAll(".cta.inactive");
+
+inactiveButtons.forEach((button) => {
+  button.addEventListener("click", () => alert("Coming soon"));
+});
+
+// INACTIVE MENU LINKS
+
+const inactiveLinks = document.querySelectorAll(".nav__item.inactive");
+
+inactiveLinks.forEach((button) => {
+  button.addEventListener("click", () => alert("Coming soon"));
+});
