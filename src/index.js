@@ -65,19 +65,19 @@ function goToProfile(e) {
   const target = e.target;
   if (!target.closest(".nav__item")) return;
 
+  const profilesContainer = document.querySelector(".profiles__container");
+  const slideWidth = profilesContainer.clientWidth;
+
   const activeItem = target.closest(".nav__item");
   // Move Slide to target
-  const slide = +target.closest(".nav__item").getAttribute("data-slide");
+  const slide = +activeItem.getAttribute("data-slide");
   profilesContainer.style.transform = `translateX(${-slide * slideWidth}px)`;
-  // goToSlide(slide);
 
   profilesContainer.style.transition = "transform 1s";
-  // console.log(profileItems);
-  console.log(slideWidth);
   profileItems.forEach((item) => {
-    // console.log(item);
     item.classList.remove("active");
   });
+
   activeItem.classList.add("active");
 }
 
