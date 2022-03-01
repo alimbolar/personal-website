@@ -56,11 +56,14 @@ section.profiles nav {
       gap: 3rem;
     }
     li {
+      &.active {
+        border-bottom: 1px solid orange;
+      }
       a {
         text-decoration: none;
         &:hover {
           color: black;
-          border-bottom: orange;
+          border-bottom: var(--orange);
         }
       }
     }

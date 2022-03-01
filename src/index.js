@@ -43,22 +43,28 @@ homeMenu.addEventListener("click", function () {
 
 const profilesNav = document.querySelector(".profiles__nav");
 console.log(profilesNav);
-
+const profileItems = profilesNav.querySelectorAll(".nav__item");
 profilesNav.addEventListener("click", goToProfile);
 
 const profilesContainer = document.querySelector(".profiles__container");
 
 const slideWidth = profilesContainer.clientWidth;
 
-console.log(profilesContainer);
-
 function goToProfile(e) {
   e.preventDefault();
 
   const target = e.target;
   if (!target.closest(".nav__item")) return;
-  const slide = +target.closest(".nav__item").getAttribute("data-slide");
 
+  const activeItem = target.closest(".nav__item");
+  // Move Slide to target
+  const slide = +target.closest(".nav__item").getAttribute("data-slide");
   profilesContainer.style.transform = `translateX(${-slide * slideWidth}px)`;
   profilesContainer.style.transition = "transform 1s";
+  console.log(profileItems);
+  profileItems.forEach((item) => {
+    // console.log(item);
+    item.classList.remove("active");
+  });
+  activeItem.classList.add("active");
 }
