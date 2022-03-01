@@ -2,13 +2,13 @@ main {
   position: fixed;
   top: var(--header-height-mobile);
   height: calc(100vh - var(--header-height-mobile));
-  overflow: scroll;
+  overflow: hidden;
 
   @media (min-width: 50rem) {
     position: fixed;
     top: var(--header-height-desktop);
     height: calc(100vh - var(--header-height-desktop));
-    overflow: scroll;
+    overflow: hidden;
   }
 
   .home,
