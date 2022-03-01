@@ -5,12 +5,13 @@ blockquote {
     &::before {
       font-family: "Sorts Mill Goudy", serif;
       content: "“";
+      color: gray;
       font-size: 9rem;
       position: absolute;
       left: -3rem;
       top: -1rem;
       @media (min-width: 50rem) {
-        left: -1.5rem;
+        left: -4rem;
         top: -1rem;
       }
     }
@@ -20,16 +21,18 @@ blockquote {
     position: relative;
 
     &::after {
-      content: "”";
       font-family: "Sorts Mill Goudy", serif;
+      content: "”";
+      color: gray;
       font-size: 9rem;
       position: absolute;
       right: -3.6rem;
       // bottom: 0rem;
       top: -0.5rem;
-      color: black;
+      // color: black;
       @media (min-width: 50rem) {
         right: -0.5rem;
+        // color: gray;
       }
     }
   }

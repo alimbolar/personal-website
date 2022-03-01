@@ -63,7 +63,8 @@ function goToProfile(e) {
   const slide = +target.closest(".nav__item").getAttribute("data-slide");
   profilesContainer.style.transform = `translateX(${-slide * slideWidth}px)`;
   profilesContainer.style.transition = "transform 1s";
-  console.log(profileItems);
+  // console.log(profileItems);
+  console.log(slideWidth);
   profileItems.forEach((item) => {
     // console.log(item);
     item.classList.remove("active");
