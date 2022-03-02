@@ -48,16 +48,16 @@ console.log(profilesNav);
 const profileItems = profilesNav.querySelectorAll(".nav__item");
 profilesNav.addEventListener("click", goToProfile);
 
-const profilesContainer = document.querySelector(".profiles__container");
-const allProfiles = document.querySelectorAll(".profile");
+// const profilesContainer = document.querySelector(".profiles__container");
+// const allProfiles = document.querySelectorAll(".profile");
 
-const slideWidth = profilesContainer.clientWidth;
+// const slideWidth = profilesContainer.clientWidth;
 
-function goToSlide(slide) {
-  allProfiles.forEach((profile) => {
-    profile.style.transform = `transformX(${slide * 100}%)`;
-  });
-}
+// function goToSlide(slide) {
+//   allProfiles.forEach((profile) => {
+//     profile.style.transform = `transformX(${slide * 100}%)`;
+//   });
+// }
 
 function goToProfile(e) {
   e.preventDefault();
@@ -67,17 +67,19 @@ function goToProfile(e) {
 
   const profilesContainer = document.querySelector(".profiles__container");
   const slideWidth = profilesContainer.clientWidth;
-
   const activeItem = target.closest(".nav__item");
+
   // Move Slide to target
+
   const slide = +activeItem.getAttribute("data-slide");
   profilesContainer.style.transform = `translateX(${-slide * slideWidth}px)`;
-
   profilesContainer.style.transition = "transform 1s";
+
+  // Add active class to activeItem
+
   profileItems.forEach((item) => {
     item.classList.remove("active");
   });
-
   activeItem.classList.add("active");
 }
 
