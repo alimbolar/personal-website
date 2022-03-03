@@ -98,3 +98,13 @@ const inactiveLinks = document.querySelectorAll(".nav__item.inactive");
 inactiveLinks.forEach((button) => {
   button.addEventListener("click", () => alert("Coming soon"));
 });
+
+// METRONOME LINK
+
+const metronomeLink = document.querySelectorAll(".metronome-link");
+
+metronomeLink.forEach((link) => {
+  link.addEventListener("click", () =>
+    window.open("https://metronome-alimbolar.netlify.app")
+  );
+});

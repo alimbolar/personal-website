@@ -1,4 +1,4 @@
-# My Personal Website (alimboar.com)
+# My Personal Website (alimbolar.com)
 
 This design would be used as a template in wordpress.
 
