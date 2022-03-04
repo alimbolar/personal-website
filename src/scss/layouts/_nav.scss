@@ -18,13 +18,15 @@ header {
 
     ul {
       text-align: center;
-      font-family: "Courier New", Courier, monospace;
+      // font-family: "Courier New", Courier, monospace;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
       font-size: 1.25rem;
-      line-height: 2.5rem;
+      line-height: 3rem;
       color: gray;
       @media (min-width: 50rem) {
         font-size: 1.5rem;
-        line-height: 3rem;
+        line-height: 5rem;
       }
       li {
         border-bottom: 1px solid gray;
@@ -38,7 +40,8 @@ header {
   }
 }
 
-section.profiles nav {
+section.profiles nav,
+section.contact nav {
   display: flex;
   justify-content: center;
   align-items: center;

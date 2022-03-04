@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@1&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap");
+
 :root {
   --header-height-desktop: 10rem;
   --header-height-mobile: 6rem;
-  --orange: orange;
-  --blue: darkblue;
+  // --orange: orange;
+  // --blue: darkblue;
+
+  // --header-height-mobile: 5rem;
+  --orange: hsl(36, 100%, 60%);
+  --blue: hsl(240, 100%, 12%);
 }
 
 html {
@@ -19,7 +25,9 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: inherit;
-  font-family: "Courier New", Courier, monospace;
+  // font-family: "Courier New", Courier, monospace;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
 img {
@@ -29,3 +37,31 @@ img {
 body {
   height: 100%;
 }
+
+// @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap");
+
+// :root {
+//   --header-height-mobile: 5rem;
+//   --orange: hsl(36, 100%, 60%);
+//   --blue: hsl(240, 100%, 12%);
+// }
+
+// html {
+//   box-sizing: border-box;
+//   // height: 100%;
+//   font-family: "Lato", sans-serif;
+//   font-weight: 300;
+// }
+
+// *,
+// *::before,
+// *::after {
+//   padding: 0;
+//   margin: 0;
+//   box-sizing: inherit;
+// }
+
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }

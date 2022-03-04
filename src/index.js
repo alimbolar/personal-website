@@ -22,10 +22,13 @@ menu.addEventListener("click", function () {
 
 const knowMoreButton = document.querySelector(".cta.know-more");
 const knowMoreMenu = document.querySelector(".nav__item.know-more");
-const homeMenu = document.querySelector(".nav__item.home");
+// const homeMenu = document.querySelector(".nav__item.home");
+const contactMenu = document.querySelector(".nav__item.contact-menu");
+
 const profiles = document.querySelector(".profiles");
 const hero = document.querySelector(".hero");
-console.log(homeMenu);
+const contact = document.querySelector(".contact");
+// console.log(homeMenu);
 
 knowMoreButton.addEventListener("click", function () {
   profiles.scrollIntoView();
@@ -36,9 +39,14 @@ knowMoreMenu.addEventListener("click", function () {
   headerNav.classList.toggle("hidden");
   profiles.scrollIntoView();
 });
-homeMenu.addEventListener("click", function () {
+// homeMenu.addEventListener("click", function () {
+//   headerNav.classList.toggle("hidden");
+//   hero.scrollIntoView(false);
+// });
+contactMenu.addEventListener("click", function () {
   headerNav.classList.toggle("hidden");
-  hero.scrollIntoView(false);
+  contact.scrollIntoView(false);
+  console.log(contact);
 });
 
 // PROFILES NAV
