@@ -2,8 +2,12 @@ button {
   border: 1px solid gray;
   padding: 0.5rem;
   text-align: left;
-  font-size: 1rem;
+  font-size: 0.8rem;
   // align-self: flex-start;
+
+  @media (min-width: 50rem) {
+    font-size: 1rem;
+  }
 
   //   .cta {
   //   }
