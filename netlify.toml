@@ -4,4 +4,4 @@ functions = 'functions'
 publish = "build"
 
 [functions]
-node-bundler = "esbuild"
+node_bundler = "esbuild"
