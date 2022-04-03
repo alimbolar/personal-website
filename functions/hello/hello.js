@@ -1,5 +1,5 @@
-import fetch from "node-fetch";
-// const fetch = require("node-fetch");
+const fetch = require("node-fetch");
+// import fetch from "node-fetch";
 
 exports.handler = async function (event, context) {
   const response = await fetch("https://youandeyemag.com/wp-json/wp/v2/posts");
