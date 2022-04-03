@@ -19,7 +19,6 @@
   "homepage": "https://github.com/alimbolar/personal-website#readme",
   "dependencies": {
     "mongodb": "^4.4.1",
-    "mongoose": "^6.2.9",
     "node-fetch": "^3.2.3",
     "style-loader": "^3.3.1"
   },
