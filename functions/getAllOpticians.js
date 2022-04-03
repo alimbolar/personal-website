@@ -58,7 +58,11 @@ exports.handler = async function (event, context) {
 
     // const opticians = await query;
 
-    const opticians = await db.collection("opticians").find().toArray();
+    const opticians = await db
+      .collection("opticians")
+      .find({}, { name: 1, opticianId: 1, slug: 1, logoUrl: 1 })
+      .sort({ name: 1 })
+      .toArray();
     client.close();
 
     return {
