@@ -1,10 +1,11 @@
 const { MongoClient } = require("mongodb");
+require("dotenv").config();
 
 exports.handler = async function (event, context) {
-  const DB =
-    "mongodb+srv://production:pauldaniel@fp-projects.t9wzd.mongodb.net/youandeyeawards2022?retryWrites=true&w=majority";
+  //   const DB =
+  //     "mongodb+srv://production:pauldaniel@fp-projects.t9wzd.mongodb.net/youandeyeawards2022?retryWrites=true&w=majority";
 
-  const client = await MongoClient.connect(DB, {
+  const client = await MongoClient.connect(process.env.DB, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   });
