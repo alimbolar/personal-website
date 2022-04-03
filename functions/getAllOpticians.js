@@ -1,11 +1,12 @@
-const mongodb = require("mongodb");
+const { MongoClient } = require("mongodb");
 
 exports.handler = async function (event, context) {
   const DB =
     "mongodb+srv://production:pauldaniel@fp-projects.t9wzd.mongodb.net/youandeyeawards2022?retryWrites=true&w=majority";
 
-  const client = await mongodb.connect(DB, {
+  const client = await MongoClient.connect(DB, {
     useUnifiedTopology: true,
+    useNewUrlParser: true,
   });
   const db = client.db();
 
