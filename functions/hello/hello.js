@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 exports.handler = async function (event, context) {
   const response = await fetch("https://youandeyemag.com/wp-json/wp/v2/posts");
 
-  const data = response.json();
+  const data = JSON.stringify(response.json());
 
   return {
     statusCode: 200,
