@@ -1,14 +1,13 @@
-import fetch from 'node-fetch';
+import fetch from "node-fetch";
 
-exports.handler = async function(event, context){
+exports.handler = async function (event, context) {
+  // const response = await fetch('https://youandeyemag.com/wp-json/wp/v2/posts');
 
-    const response = await fetch('https://youandeyemag.com/wp-json/wp/v2/posts');
+  // const data = response.json();
 
-    const data = response.json();
-
-    return {
-        statusCode:200,
-        body:JSON.stringify({message:"Hello World"}),
-        data
-    }
-}
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: "Hello World" }),
+    // data
+  };
+};
