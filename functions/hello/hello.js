@@ -8,7 +8,6 @@ exports.handler = async function (event, context) {
 
   return {
     statusCode: 200,
-    message: "testing",
-    body: JSON.stringify(data),
+    body: data,
   };
 };
